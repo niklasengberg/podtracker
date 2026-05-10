@@ -87,6 +87,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: appCss,
       },
     ],
+    scripts: [
+      {
+        defer: true,
+        "data-domain": "podtracker.lovable.app",
+        src: "https://plausible.io/js/script.js",
+      },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
