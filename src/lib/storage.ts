@@ -57,7 +57,9 @@ export function addPlacement(p: Placement) {
 
 export function updatePlacement(id: string, patch: Partial<Placement>) {
   const d = loadData();
-  d.placements = d.placements.map((p) => (p.id === id ? { ...p, ...patch } : p));
+  d.placements = sortByDateDesc(
+    d.placements.map((p) => (p.id === id ? { ...p, ...patch } : p)),
+  );
   saveData(d);
 }
 
