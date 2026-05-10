@@ -89,9 +89,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     scripts: [
       {
-        defer: true,
-        "data-domain": "podtracker.lovable.app",
-        src: "https://plausible.io/js/script.js",
+        async: true,
+        src: "https://cdn.telemetrydeck.com/websdk/telemetrydeck.min.js",
+        "data-app-id": "REPLACE_WITH_TELEMETRYDECK_APP_ID",
       },
     ],
   }),
