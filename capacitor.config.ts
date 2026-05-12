@@ -9,7 +9,7 @@ import type { CapacitorConfig } from '@capacitor/cli';
  * innan du kör `npx cap add ios` första gången.
  */
 const config: CapacitorConfig = {
-  appId: 'com.dittnamn.podtracker',
+  appId: 'com.niklas.podtracker',
   appName: 'PodTracker',
   webDir: 'dist',
   ios: {
